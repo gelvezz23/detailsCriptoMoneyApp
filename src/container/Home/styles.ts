@@ -5,4 +5,5 @@ export const Wrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 `;
