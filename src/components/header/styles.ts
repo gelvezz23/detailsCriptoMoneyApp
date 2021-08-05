@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 interface Props {
-  primary: boolean;
+  primary?: boolean;
 }
 export const Button = styled(Link)`
   /* Adapt the colors based on primary prop */
