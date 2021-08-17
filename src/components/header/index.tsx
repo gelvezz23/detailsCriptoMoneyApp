@@ -1,15 +1,14 @@
-import React from "react";
 import { Button, HeaderWrapper } from "./styles";
 function Header() {
   return (
     <HeaderWrapper>
       <ul>
         <li>
-          <Button to="/" primary>
+          <Button to="/" primary={true}>
             Inicio
           </Button>
 
-          <Button to="/">Consultar btc</Button>
+          <Button to="/filters">Filtrar</Button>
         </li>
       </ul>
     </HeaderWrapper>

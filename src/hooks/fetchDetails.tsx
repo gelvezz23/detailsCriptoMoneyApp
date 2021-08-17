@@ -1,15 +1,11 @@
 import { useState, useEffect } from "react";
 
-export const useFetch = (
-  url: string,
-  start: number = 0,
-  limit: number = 10
-) => {
+export const useFetchDetails = (url: string, id: number) => {
   const urlBase = process.env.REACT_APP_API_URL;
-  const endpointGlobal = `${urlBase}/${url}/?start=${start}&limit=${limit}`;
+  const endpointGlobal = `${urlBase}/${url}/?id=${id}`;
 
   const [isLoading, setIsLoading] = useState(false);
-  const [apiData, setApiData] = useState({ data: [] });
+  const [apiData, setApiData] = useState([]);
   const [serverError, setServerError] = useState(null);
 
   useEffect(() => {
@@ -28,7 +24,7 @@ export const useFetch = (
     };
 
     fetchData();
-  }, [endpointGlobal, start]);
+  }, [endpointGlobal]);
 
   return { isLoading, apiData, serverError };
 };

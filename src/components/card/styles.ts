@@ -1,15 +1,17 @@
 import styled from "styled-components";
+import { fadeIn } from "./../../styles/animation";
 
 export const CardWrapper = styled.div`
+  ${fadeIn()};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 2px white;
   width: 100%;
 
   div {
     padding: 5px;
-    width: 50%;
+    margin: 5px;
+    width: auto;
   }
   p {
     text-align: right;
@@ -17,6 +19,10 @@ export const CardWrapper = styled.div`
   }
   p span {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+`;
+
+export const Article = styled.article`
+  min-height: auto;
 `;

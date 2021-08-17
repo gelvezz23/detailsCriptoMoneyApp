@@ -10,8 +10,8 @@ export const Button = styled(Link)`
   color: ${(props: Props) => (props.primary ? "white" : "palevioletred")};
 
   font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
+  margin: 0.5em;
+  padding: 0.15em 0.5em;
   border: 2px solid palevioletred;
   border-radius: 3px;
   text-decoration: none;

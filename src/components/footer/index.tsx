@@ -1,10 +1,11 @@
 import React from "react";
 import { FooterWrapper } from "./styles";
+import image from "./../../assets/image/logo.png";
 
 function Footer(): JSX.Element {
   return (
     <FooterWrapper>
-      <h1>Footer</h1>
+      <img src={image} alt="imagen logo" />
     </FooterWrapper>
   );
 }

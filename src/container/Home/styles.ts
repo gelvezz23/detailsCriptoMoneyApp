@@ -1,6 +1,24 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
+export const Container = styled.section`
+  width: 100%;
+  padding: 10px;
+
+  button {
+    background-color: transparent;
+    font-size: 1em;
+    margin: 0.5em;
+    padding: 0.15em 0.5em;
+    border: 2px solid palevioletred;
+    color: palevioletred;
+    :hover {
+      background-color: palevioletred;
+      color: white;
+    }
+  }
+`;
+
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
