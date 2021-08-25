@@ -8,7 +8,9 @@ function Header() {
             Inicio
           </Button>
 
-          <Button to="/filters">Filtrar</Button>
+          <Button to="/filters" primary={false}>
+            Filtrar
+          </Button>
         </li>
       </ul>
     </HeaderWrapper>

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export const useFetch = (
   url: string,
   start: number = 0,
-  limit: number = 10
+  limit: number = 100
 ) => {
   const urlBase = process.env.REACT_APP_API_URL;
   const endpointGlobal = `${urlBase}/${url}/?start=${start}&limit=${limit}`;
